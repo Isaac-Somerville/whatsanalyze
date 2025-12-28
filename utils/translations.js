@@ -77,7 +77,7 @@ export const messages = {
     longestMessage: "Longest message:",
     uniqueWords: "Wordstock (unique words used):",
     avgWords: "Average words per message:",
-    firstMessage: "first Message",
+    firstMessage: "First Message",
     lastMessage: "Last Message",
     youChatted: "You chatted for",
     days: "days",
