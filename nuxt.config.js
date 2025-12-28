@@ -121,27 +121,27 @@ export default {
   modules: [
     "@nuxt/content",
     "@nuxtjs/pwa",
-    "@nuxtjs/gtm",
+    // "@nuxtjs/gtm",
     "nuxt-i18n",
-    "@nuxtjs/firebase",
+    // "@nuxtjs/firebase",
   ],
-  firebase: {
-    config: {
-      apiKey: "AIzaSyBWNP0Ckw94E7tyoZZozAOZ6JSQRH2lzFU",
-      authDomain: "whatsanalyze-80665.firebaseapp.com",
-      projectId: "whatsanalyze-80665",
-      storageBucket: "whatsanalyze-80665.appspot.com",
-      messagingSenderId: "116352567232",
-      appId: "1:116352567232:web:b44bef99e5a4fc6c962a25",
-      measurementId: "G-H1WL9MXJ17",
-    },
-    services: {
-      firestore: true, // Just as example. Can be any other service.
-      functions: {
-        emulatorPort: run_with_functions ? 5001 : undefined,
-      },
-    },
-  },
+  // firebase: {
+  //   config: {
+  //     apiKey: "AIzaSyBWNP0Ckw94E7tyoZZozAOZ6JSQRH2lzFU",
+  //     authDomain: "whatsanalyze-80665.firebaseapp.com",
+  //     projectId: "whatsanalyze-80665",
+  //     storageBucket: "whatsanalyze-80665.appspot.com",
+  //     messagingSenderId: "116352567232",
+  //     appId: "1:116352567232:web:b44bef99e5a4fc6c962a25",
+  //     measurementId: "G-H1WL9MXJ17",
+  //   },
+  //   services: {
+  //     firestore: true, // Just as example. Can be any other service.
+  //     functions: {
+  //       emulatorPort: run_with_functions ? 5001 : undefined,
+  //     },
+  //   },
+  // },
   i18n: {
     seo: true,
     locales: [
@@ -253,15 +253,9 @@ export default {
       }
     },
   },
-  server: {
-    host: "0.0.0.0",
-    https:
-    // eslint-disable-next-line no-undef
-      process.env.NODE_ENV !== "production" || local
-        ? {
-          key: fs.readFileSync("./localhost-key.pem"),
-          cert: fs.readFileSync("./localhost.pem"),
-        }
-        : {},
-  },
+server: {
+  host: "127.0.0.1",
+  https: false,
+}
+
 };
