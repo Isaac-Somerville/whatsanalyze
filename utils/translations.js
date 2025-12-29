@@ -75,7 +75,7 @@ export const messages = {
     totalWords: "Total words:",
     mostUsedEmojie: "Most used emojis:",
     longestMessage: "Longest message:",
-    uniqueWords: "Wordstock (unique words used):",
+    uniqueWords: "Unique words used:",
     avgWords: "Average words per message:",
     firstMessage: "First Message",
     lastMessage: "Last Message",
